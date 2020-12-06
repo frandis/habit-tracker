@@ -1,38 +1,87 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+.habit {
+  font-size: 2.5rem;
+  padding: 0.5em;
+  list-style: none;
+}
+
+.habit-count,
+.navbar-count {
+  font-size: 2rem;
+  background-color: darkseagreen;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
+  border-radius: 50%;
+  color: whitesmoke;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.habit-button {
+  font-size: 2.5rem;
+  margin: 0 0.1em;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.habit-button:hover {
+  opacity: 0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.habit-increase,
+.habit-decrease {
+  color: goldenrod;
+}
+
+.habit-delete {
+  color: darkred;
+  font-size: 2rem;
+}
+
+nav {
+  background-color: lemonchiffon;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  padding: 1em;
+  margin-right: 0.5rem;
+  color: green;
+}
+
+.navbar-text {
+  font-size: 2rem;
+}
+
+.habit-form {
+  padding: 1em;
+}
+
+.form-input {
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.form-inputBox {
+  font-size: 1.2rem;
+  border-width: 3px;
+}
+
+.add-button,
+.reset-button {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 5rem;
+  background-color: darkolivegreen;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.1 rem;
 }
