@@ -12,8 +12,10 @@ export const habitReducer = (state = [], action) => {
       return addedState
 
     case 'DECREMENT':
+      const toBeUpdated = state.find((x) => x.id === action.payload.id)
+      const count = toBeUpdated.count > 0 ? toBeUpdated.count - 1 : 0
       const newState = state.map((x) =>
-        x.id === action.payload.id ? { ...x, count: x.count - 1 } : { ...x }
+        x.id === action.payload.id ? { ...x, count } : { ...x }
       )
       return newState
 
