@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { useDispatch } from 'react-redux'
 import { increment, decrement, remove } from '../actions/habitActions'
 
-const Habit = memo((props) => {
+const Habit = (props) => {
   const dispatch = useDispatch()
   const handleIncrement = (habit) => {
     dispatch(increment(habit))
@@ -45,6 +45,6 @@ const Habit = memo((props) => {
       </button>
     </li>
   )
-})
+}
 
 export default Habit
